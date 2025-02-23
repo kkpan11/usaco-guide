@@ -31,13 +31,26 @@
       "uniqueId": "usaco-974",
       "name": "Tree Depth",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=974",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["Generating Functions"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "974"
+      }
+    },
+    {
+      "uniqueId": "cf-gym-103329f",
+      "name": "The Struggle",
+      "url": "https://codeforces.com/gym/103329/problem/F",
+      "source": "CF",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": ["XOR Convolution"],
+      "solutionMetadata": {
+        "kind": "autogen-label-from-site",
+        "site": "CF"
       }
     }
   ]

@@ -49,7 +49,8 @@
       "isStarred": false,
       "tags": ["Binary Search", "Sorting"],
       "solutionMetadata": {
-        "kind": "internal"
+        "kind": "internal",
+        "hasHints": true
       }
     },
     {
@@ -86,7 +87,8 @@
       "isStarred": true,
       "tags": ["Binary Search", "Sorting", "2P", "Greedy"],
       "solutionMetadata": {
-        "kind": "internal"
+        "kind": "internal",
+        "hasHints": true
       }
     },
     {
@@ -105,7 +107,7 @@
       "uniqueId": "usaco-624",
       "name": "Load Balancing",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=624",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Insane",
       "isStarred": false,
       "tags": ["Binary Search", "Sorting"],
@@ -174,8 +176,7 @@
       "isStarred": false,
       "tags": ["Binary Search"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
+        "kind": "internal"
       }
     },
     {
@@ -323,8 +324,8 @@
       "isStarred": false,
       "tags": ["Binary Search"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
+        "kind": "internal",
+        "hasHints": true
       }
     },
     {
@@ -334,7 +335,7 @@
       "source": "Baltic OI",
       "difficulty": "Very Hard",
       "isStarred": false,
-      "tags": ["Binary Search"],
+      "tags": ["Binary Search", "Stack"],
       "solutionMetadata": {
         "kind": "internal"
       }

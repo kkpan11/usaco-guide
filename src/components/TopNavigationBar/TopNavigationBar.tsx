@@ -20,7 +20,7 @@ import classNames from 'classnames';
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { Fragment, useState } from 'react';
-import { SignInContext } from '../../context/SignInContext';
+import { useSignIn } from '../../context/SignInContext';
 import {
   useFirebaseUser,
   useIsUserDataLoaded,
@@ -32,6 +32,7 @@ import LogoSquare from '../LogoSquare';
 import MobileMenuButtonContainer from '../MobileMenuButtonContainer';
 import SectionsDropdown from '../SectionsDropdown';
 import { LoadingSpinner } from '../elements/LoadingSpinner';
+import Banner from './Banner';
 import { SearchModal } from './SearchModal';
 import { UserAvatarMenu } from './UserAvatarMenu';
 
@@ -40,11 +41,12 @@ export default function TopNavigationBar({
   linkLogoToIndex = false,
   currentSection = null,
   hidePromoBar = false,
+  redirectToDashboard = false,
 }) {
   const firebaseUser = useFirebaseUser();
   const signOut = useSignOutAction();
   const isLoaded = useIsUserDataLoaded();
-  const { signIn } = React.useContext(SignInContext);
+  const { signIn } = useSignIn();
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isContactUsActive, setIsContactUsActive] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -131,33 +133,17 @@ export default function TopNavigationBar({
       key: 'adv',
     },
   ];
-
   return (
     <>
-      {/*       {!hidePromoBar && (
-        <div className="relative bg-blue-600">
-          <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-            <div className="pr-16 sm:text-center sm:px-16">
-              <p className="font-medium text-white">
-                <span className="md:inline">
-                  Come to our Livesolve and Q&A workshop hosted by the USA's IOI
-                  team!
-                </span>
-                <span className="block sm:ml-2 sm:inline-block">
-                  <a
-                    href="https://joincpi.org/workshops/ioi23"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white font-bold underline"
-                  >
-                    Register here &rarr;
-                  </a>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      )} */}
+      {!hidePromoBar && (
+        <>
+          <Banner
+            text="Registration for Spring Live Classes Open"
+            action="Register"
+            link="https://joincpi.org/classes"
+          />
+        </>
+      )}
 
       <nav
         className={classNames(
@@ -170,6 +156,7 @@ export default function TopNavigationBar({
             <div className="flex px-2 lg:px-0">
               <Link
                 to={linkLogoToIndex ? '/' : '/dashboard'}
+                state={{ redirect: redirectToDashboard }}
                 className="flex-shrink-0 flex items-center"
               >
                 <div className="block sm:hidden">

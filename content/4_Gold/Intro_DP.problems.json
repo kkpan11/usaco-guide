@@ -76,6 +76,7 @@
       "tags": ["DP"],
       "solutionMetadata": {
         "kind": "internal",
+        "hasHints": true,
         "usacoId": "863"
       }
     },
@@ -89,6 +90,7 @@
       "tags": ["DP"],
       "solutionMetadata": {
         "kind": "internal",
+        "hasHints": true,
         "usacoId": "945"
       }
     },
@@ -113,8 +115,8 @@
       "isStarred": false,
       "tags": ["DP", "BFS"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
+        "kind": "internal",
+        "hasHints": true
       }
     }
   ],
@@ -171,7 +173,7 @@
       "uniqueId": "usaco-673",
       "name": "Team Building",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=673",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["DP"],

@@ -126,7 +126,7 @@ export const OrderedFirstMembers: Member[] = [
   {
     photo: 'evan',
     name: 'Evan Zhao',
-    titles: ['Executive', 'Director of Classes', roles.liveInstructor],
+    titles: ['Board', roles.liveInstructor],
     email: 'evanzhao12@gmail.com',
   },
   {
@@ -169,14 +169,27 @@ export const OrderedFirstMembers: Member[] = [
     codeforces: 'sanspapyrus683',
     reddit: 'sanspapyrus683',
   },
+  {
+    photo: 'tatha',
+    name: 'Tatha Pandey',
+    titles: [roles.liveInstructor],
+    github: 'tathap',
+  },
+  {
+    photo: 'justin_ji',
+    name: 'Justin Ji',
+    titles: [roles.contentAuthor],
+    github: 'TheGamingMousse',
+  },
+  {
+    photo: 'tianqin',
+    name: 'Tianqin Meng',
+    titles: [roles.contentAuthor],
+    github: 'tqmsh',
+  },
 ];
 
 export const RestOfMembers: Member[] = [
-  {
-    photo: 'nikhil',
-    name: 'Nikhil Chatterjee',
-    titles: [roles.liveInstructor, roles.videoInstructor, roles.clubCurriculum],
-  },
   {
     photo: 'ryan',
     name: 'Ryan Chou',
@@ -189,28 +202,6 @@ export const RestOfMembers: Member[] = [
     github: 'ryanchou-dev',
     website: 'https://www.ryanchou.dev/',
   },
-  {
-    photo: 'dustin',
-    name: 'Dustin Miao',
-    titles: [roles.liveInstructor, roles.contentAuthor],
-    github: 'dutinmeow',
-    email: 'dutin20.meow@gmail.com',
-    codeforces: 'dutinmeow',
-  },
-  /*{
-    photo: "egor",
-    name: "Egor Gagushin",
-    titles: [roles.videoInstructor],
-    codeforces: "eggag32",
-    github: "Eggag",
-  },*/
-  /*{
-    photo: "ramit",
-    name: "Ramit Goyal",
-    titles: [roles.videoInstructor],
-    email: "24ramitg@students.harker.org",
-    instagram: "ramit_goyal24",
-  },*/
   {
     photo: 'jesse',
     name: 'Jesse Choe',
@@ -225,12 +216,94 @@ export const RestOfMembers: Member[] = [
     codeforces: 'YoRepi7',
   },
   {
-    photo: 'stanley',
-    name: 'Stanley Zhao',
-    github: 'zhao-stanley',
-    titles: [roles.webdev],
-    email: 'stanleyhzhao@gmail.com',
-    website: 'https://szhao.dev/',
+    photo: 'trisha',
+    name: 'Trisha Sabadra',
+    titles: ['Director of Classes', roles.liveInstructor],
+  },
+  {
+    photo: 'alex_wang',
+    name: 'Alex Wang',
+    titles: ['Director of Clubs'],
+  },
+  {
+    photo: 'aakash_gokhale',
+    name: 'Aakash Gokhale',
+    titles: ['Director of Contests'],
+  },
+  {
+    photo: 'justin_huang',
+    name: 'Justin Huang',
+    titles: ['Director of Software', roles.webdev],
+  },
+  {
+    photo: 'mihnea',
+    name: 'Mihnea Brebenel',
+    titles: [roles.contentAuthor],
+  },
+  {
+    photo: 'daniel_zhu',
+    name: 'Daniel Zhu',
+    titles: [roles.contentAuthor, roles.webdev],
+  },
+  {
+    photo: 'envy',
+    name: 'Chongtian Ma',
+    titles: [roles.contentAuthor],
+  },
+  {
+    photo: 'andrew_xu',
+    name: 'Andrew Xu',
+    titles: [roles.liveInstructor],
+  },
+  {
+    photo: 'peng_bai',
+    name: 'Peng Bai',
+    titles: [roles.contentAuthor],
+  },
+];
+
+export const NotPictured: Member[] = [
+  {
+    name: 'Kevin Sheng',
+    titles: [roles.contentAuthor],
+    github: 'sanspapyrus683',
+  },
+  {
+    name: 'Shreyas Thumathy',
+    titles: [roles.liveInstructor, roles.clubCurriculum],
+    github: 'therealshreyas',
+  },
+  {
+    name: 'Sathvik Chundru',
+    titles: [roles.contentAuthor],
+    github: 'sathu-beep',
+    codeforces: 'sus',
+  },
+  {
+    name: 'KJ Karaisz',
+    titles: [roles.contentAuthor],
+    github: 'IDON-TEXIST',
+  },
+];
+
+export const FormerMembers: Member[] = [
+  {
+    photo: 'nikhil',
+    name: 'Nikhil Chatterjee',
+    titles: [roles.liveInstructor, roles.videoInstructor, roles.clubCurriculum],
+  },
+  {
+    photo: 'alex_du',
+    name: 'Alex Du',
+    titles: [roles.contentAuthor],
+  },
+  {
+    photo: 'dustin',
+    name: 'Dustin Miao',
+    titles: [roles.liveInstructor, roles.contentAuthor],
+    github: 'dutinmeow',
+    email: 'dutin20.meow@gmail.com',
+    codeforces: 'dutinmeow',
   },
   {
     photo: 'jeffrey_zhang',
@@ -238,6 +311,21 @@ export const RestOfMembers: Member[] = [
     titles: [roles.contentAuthor],
     github: 'RedBlueBird',
     email: 'jiefu.zhang1226@gmail.com',
+  },
+  {
+    photo: 'paul',
+    name: 'Paul Chen',
+    titles: [roles.contentAuthor],
+    codeforces: '876pol',
+    github: '876pol',
+  },
+  {
+    photo: 'stanley',
+    name: 'Stanley Zhao',
+    github: 'zhao-stanley',
+    titles: [roles.webdev],
+    email: 'stanleyhzhao@gmail.com',
+    website: 'https://szhao.dev/',
   },
   {
     photo: 'riley',
@@ -285,13 +373,6 @@ export const RestOfMembers: Member[] = [
     titles: [roles.clubCurriculum],
   },
   {
-    photo: 'paul',
-    name: 'Paul Chen',
-    titles: [roles.contentAuthor],
-    codeforces: '876pol',
-    github: '876pol',
-  },
-  {
     photo: 'danielge',
     name: 'Daniel Ge',
     titles: [roles.contentAuthor],
@@ -299,11 +380,6 @@ export const RestOfMembers: Member[] = [
     github: 'DenialRiver1434',
     email: 'mailto:shurongge@gmail.com',
     website: 'https://denialriver1434.github.io/',
-  },
-  {
-    photo: 'trisha',
-    name: 'Trisha Sabadra',
-    titles: ['Director of Classes', roles.liveInstructor],
   },
   {
     photo: 'advay',
@@ -332,19 +408,11 @@ export const RestOfMembers: Member[] = [
     titles: [roles.liveInstructor, roles.clubCurriculum],
   },
   {
-    photo: 'alex_wang',
-    name: 'Alex Wang',
-    titles: ['Director of Clubs'],
-  },
-  {
-    photo: 'aakash_gokhale',
-    name: 'Aakash Gokhale',
-    titles: ['Director of Contests'],
-  },
-  {
-    photo: 'justin_huang',
-    name: 'Justin Huang',
-    titles: ['Director of Software', roles.webdev],
+    photo: 'pranav',
+    name: 'Pranav Jadhav',
+    titles: ['Director of Clubs', roles.clubCurriculum],
+    github: 'pranavgithub1',
+    email: 'pra168109@gmail.com',
   },
   {
     photo: 'harsh_akunuri',
@@ -360,40 +428,6 @@ export const RestOfMembers: Member[] = [
     photo: 'nathan_zhang',
     name: 'Nathan Zhang',
     titles: [roles.clubCurriculum],
-  },
-  {
-    photo: 'andrew_xu',
-    name: 'Andrew Xu',
-    titles: [roles.liveInstructor],
-  },
-];
-
-export const NotPictured: Member[] = [
-  {
-    name: 'Kevin Sheng',
-    titles: [roles.contentAuthor],
-    github: 'sanspapyrus683',
-  },
-  {
-    name: 'Shreyas Thumathy',
-    titles: [roles.liveInstructor, roles.clubCurriculum],
-    github: 'therealshreyas',
-  },
-  {
-    name: 'Sathvik Chundru',
-    titles: [roles.contentAuthor],
-    github: 'sathu-beep',
-    codeforces: 'sus',
-  },
-];
-
-export const FormerMembers: Member[] = [
-  {
-    photo: 'pranav',
-    name: 'Pranav Jadhav',
-    titles: ['Director of Clubs', roles.clubCurriculum],
-    github: 'pranavgithub1',
-    email: 'pra168109@gmail.com',
   },
   {
     photo: 'neo',

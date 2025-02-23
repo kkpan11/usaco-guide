@@ -6,10 +6,9 @@ redirects:
   - /gold/intro-bitwise
   - /plat/intro-bitwise
 description: Six bitwise operators and the common ways they are used.
-author: Siyong Huang, Chongtian Ma
+author: Siyong Huang, Chongtian Ma, Mihnea Brebenel
 frequency: 3
 ---
-
 
 <Resources>
 	<Resource source="CPH" title="10.2 - Bit Operations" starred />
@@ -341,9 +340,111 @@ def prod(a: int, b: int) -> int:
 
 </LanguageSection>
 
+## XOR Operation
+
+Perhaps one of the most common binary operations in practice is [bitwise xor](https://en.wikipedia.org/wiki/Bitwise_operation#XOR).
+The special property that differentiates it from the other bitwise operations is that xor is its own inverse, i.e. $x \oplus x = 0$.
+
+<FocusProblem problem = "sample2" />
+
+### Explanation
+
+Let's analyze the bits of each xor-sum independently. In this case, we'll check for every bit position, i.e.
+for every power of two, whether or not it's set in the xor-sum of every contiguous subsequence.
+This way, we transformed the problem into counting the number of subsequences with
+non-zero xor-sum; this will be applied on the array form by the bits on the same position
+in all the values.
+
+### Implementation
+
+**Time Complexity:** $\mathcal{O}(N)$
+
+<LanguageSection>
+<CPPSection>
+
+```cpp
+#include <iostream>
+#include <numeric>
+#include <vector>
+
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int> v(n);
+	for (int &a : v) { cin >> a; }
+
+	long long ans = -accumulate(v.begin(), v.end(), 0LL);
+
+	// For every bit position,
+	// check if it's set on in the xor-sum of every subsequence
+	for (int i = 0; i < 30; i++) {
+		int s = 0;
+		// Count the prefix sums
+		// The # of 0 xor-sum prefxises starts from 1 to count the prefixes with
+		// xor-sum 1
+		vector<int> pref = {1, 0};
+		for (int a : v) {
+			s ^= (a >> i) & 1;
+			/*
+			 * Count the # of sequences ending at this position with xor-sum
+			 * non-zero by counting the prefixes of the inversed bit, i.e.
+			 * pref[i] ^ pref[j] = 1. Update the answer by adding the # of such
+			 * sequnces multiplied by the respective power of two.
+			 */
+			ans += pref[s ^ 1] * 1LL << i;
+			// Update the prexies
+			pref[s]++;
+		}
+	}
+
+	cout << ans << endl;
+}
+```
+
+</CPPSection>
+<PySection>
+
+```py
+n = int(input())
+v = list(map(int, input().split()))
+
+res = 0
+"""
+For every bit position
+check if it's set on in the xor-sum of every subsequence
+"""
+for i in range(30):
+	s = 0
+	"""
+	Count the prefix sums
+	The # of 0 xor-sum prefxises starts from 1 to count the prefixes with
+	xor-sum 1
+	"""
+	pref = [1, 0]
+	for a in v:
+		s ^= (a >> i) & 1
+		"""
+		Count the # of sequences ending at this position with xor-sum
+		non-zero by counting the prefixes of the inversed bit, i.e.
+		pref[i] ^ pref[j] = 1. Update the answer by adding the # of such
+		sequnces multiplied by the respective power of two.
+		"""
+		res += pref[s ^ 1] * (1 << i)
+		# update the prexies
+		pref[s] += 1
+
+print(res - sum(v))
+```
+
+</PySection>
+</LanguageSection>
+
 <Problems problems="probs" />
 
 ## Quiz
+
 <Quiz>
   <Quiz.Question>
     Which of the following will set the kth bit of int x as true? Assume you do not know what the value of the kth bit currently is.

@@ -22,7 +22,7 @@
       "source": "CSES",
       "difficulty": "Easy",
       "isStarred": true,
-      "tags": [],
+      "tags": ["2P", "Sorting"],
       "solutionMetadata": {
         "kind": "internal"
       }
@@ -34,10 +34,9 @@
       "source": "CSES",
       "difficulty": "Easy",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Sliding Window"],
       "solutionMetadata": {
-        "kind": "CPH",
-        "section": "8.1"
+        "kind": "internal"
       }
     },
     {
@@ -95,10 +94,9 @@
       "source": "CF",
       "difficulty": "Normal",
       "isStarred": false,
-      "tags": ["2P"],
+      "tags": ["2P", "Sorting", "Sliding Window"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
+        "kind": "internal"
       }
     },
     {

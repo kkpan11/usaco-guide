@@ -24,7 +24,7 @@ Since there are a total of $\frac{N(N-1)}{2}$ pairs of cows, if we can count the
 We can use [PIE (Principle of Inclusion/Exclusion)](https://artofproblemsolving.com/wiki/index.php/Principle_of_Inclusion-Exclusion) to calculate the number of compatible pairs! We'll have to add all pairs of cows that share one flavor in common, subtract cows that share two flavors in common,
 and so on...
 
-To understand why this works, imagine we only have three flavors of cows, and some cows share more than one flavor. If we were to only
+To understand why this works, imagine we only have three flavors of icecreams and that some cows share more than one flavor. If we were to only
 count the pairs of cows with one flavor, the pairs of cows that share two flavors would be overcounted, as shown in the animation below:
 
 <img src = "/usaco-862-anim/PIE.gif"/>
@@ -74,8 +74,7 @@ int main() {
 				for (int c = b + 1; c < FLAVORS; c++) {
 					common[2][{cows[i][a], cows[i][b], cows[i][c]}]++;
 					for (int d = c + 1; d < FLAVORS; d++) {
-						common[3][{cows[i][a], cows[i][b], cows[i][c],
-						           cows[i][d]}]++;
+						common[3][{cows[i][a], cows[i][b], cows[i][c], cows[i][d]}]++;
 					}
 				}
 			}
@@ -100,6 +99,49 @@ int main() {
 ```
 
 </CPPSection>
+<PySection>
+
+```py
+from itertools import combinations
+from collections import defaultdict
+
+FLAVORS = 5
+
+with open("cowpatibility.in", "r") as read:
+	n = int(read.readline().strip())
+	cows = []
+
+	for _ in range(n):
+		flavors = list(map(int, read.readline().strip().split()))
+		flavors.sort()  # Sort to avoid double counting
+		cows.append(flavors)
+
+# common[i][j] = the number of cows that share i flavors (j) in common
+common = [defaultdict(int) for _ in range(FLAVORS)]
+
+for flavors in cows:
+	common[4][tuple(flavors)] += 1
+
+	# iterate over all subsets
+	for size in range(1, FLAVORS):
+		for subset in combinations(flavors, size):
+			common[size - 1][subset] += 1
+
+compatible = 0
+# use PIE to count the number of compatible pairs
+# (see explanation above)
+for i in range(FLAVORS):
+	for subset, count in common[i].items():
+		if i % 2 == 0:
+			compatible += count * (count - 1) // 2
+		else:
+			compatible -= count * (count - 1) // 2
+
+res = n * (n - 1) // 2 - compatible
+print(res, file=open("cowpatibility.out", "w"))
+```
+
+</PySection>
 </LanguageSection>
 
 </Spoiler>

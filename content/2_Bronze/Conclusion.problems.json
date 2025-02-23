@@ -10,6 +10,30 @@
       "isStarred": false,
       "tags": ["Geometry"],
       "solutionMetadata": {
+        "kind": "internal"
+      }
+    },
+    {
+      "uniqueId": "cf-1914C",
+      "name": "Quests",
+      "url": "https://codeforces.com/problemset/problem/1914/C",
+      "source": "CF",
+      "difficulty": "Easy",
+      "isStarred": false,
+      "tags": ["Simulation"],
+      "solutionMetadata": {
+        "kind": "internal"
+      }
+    },
+    {
+      "uniqueId": "cfgym-104417G",
+      "name": "Matching",
+      "url": "https://codeforces.com/gym/104417/problem/G",
+      "source": "CF",
+      "difficulty": "Easy",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
         "kind": "autogen-label-from-site",
         "site": "CF"
       }
@@ -36,8 +60,7 @@
       "isStarred": false,
       "tags": ["Greedy"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
+        "kind": "internal"
       }
     },
     {
@@ -64,6 +87,31 @@
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "509"
+      }
+    },
+    {
+      "uniqueId": "cf-1873G",
+      "name": "ABBC or BACB",
+      "url": "https://codeforces.com/problemset/problem/1873/G",
+      "source": "CF",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": ["Ad Hoc"],
+      "solutionMetadata": {
+        "kind": "autogen-label-from-site",
+        "site": "CF"
+      }
+    },
+    {
+      "uniqueId": "aio24-backpacking",
+      "name": "Backpacking",
+      "url": "https://orac2.info/problem/aio24backpacking/",
+      "source": "AIO",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "none"
       }
     },
     {

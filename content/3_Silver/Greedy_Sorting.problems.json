@@ -74,8 +74,7 @@
       "isStarred": true,
       "tags": ["Greedy", "Sorting"],
       "solutionMetadata": {
-        "kind": "CPH",
-        "section": "6.3"
+        "kind": "internal"
       }
     },
     {
@@ -196,6 +195,18 @@
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Greedy", "Sorted Set"],
+      "solutionMetadata": {
+        "kind": "internal"
+      }
+    },
+    {
+      "uniqueId": "leetcode-502",
+      "name": "IPO",
+      "url": "https://leetcode.com/problems/ipo",
+      "source": "LC",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": ["Greedy", "Sorting", "Priority Queue"],
       "solutionMetadata": {
         "kind": "internal"
       }

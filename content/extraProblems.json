@@ -42,7 +42,7 @@
       "uniqueId": "usaco-770",
       "name": "Greedy Gift Takers",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=770",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Binary Search"],
@@ -55,7 +55,7 @@
       "uniqueId": "usaco-792",
       "name": "Lifeguards",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=792",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DP"],
@@ -68,7 +68,7 @@
       "uniqueId": "usaco-794",
       "name": "Sprinklers",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=794",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Easy",
       "isStarred": false,
       "tags": ["2P"],
@@ -94,7 +94,7 @@
       "uniqueId": "usaco-900",
       "name": "Redistricting",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=900",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Deque"],
@@ -119,7 +119,7 @@
       "uniqueId": "usaco-996",
       "name": "Cave Paintings",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=996",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DSU", "DP"],
@@ -145,7 +145,7 @@
       "uniqueId": "usaco-1022",
       "name": "Help Yourself",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1022",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["Lazy SegTree"],
@@ -158,7 +158,7 @@
       "uniqueId": "usaco-1044",
       "name": "Sprinklers 2: Return of the Alfalfa",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1044",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Prefix Sums", "DP"],
@@ -170,7 +170,7 @@
       "uniqueId": "usaco-1046",
       "name": "Circus",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1046",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["Tree"],
@@ -183,7 +183,7 @@
       "uniqueId": "usaco-1069",
       "name": "Spaceship",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1069",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["Matrix"],
@@ -196,7 +196,7 @@
       "uniqueId": "usaco-1068",
       "name": "Sleeping Cows",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1068",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DP"],
@@ -207,6 +207,7 @@
     },
     {
       "uniqueId": "usaco-1083",
+      "tags": [],
       "name": "Uddered but not Herd",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1083",
       "source": "Bronze",
@@ -220,7 +221,7 @@
       "uniqueId": "usaco-1092",
       "name": "Sum of Distances",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1092",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["BFS", "PIE"],
@@ -233,7 +234,7 @@
       "uniqueId": "usaco-1093",
       "name": "Minimum Cost Paths",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1093",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Convex"],
@@ -322,7 +323,7 @@
       "uniqueId": "usaco-1116",
       "name": "No Time to Dry",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1116",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["1DRQ"],
@@ -335,7 +336,7 @@
       "uniqueId": "usaco-1117",
       "name": "Minimizing Edges",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1117",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["BFS", "Greedy"],
@@ -348,7 +349,7 @@
       "uniqueId": "usaco-1118",
       "name": "Counting Graphs",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1118",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["BFS", "Combinatorics", "PIE"],
@@ -450,7 +451,7 @@
       "uniqueId": "usaco-1140",
       "name": "UCFJ",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1140",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["1DRQ"],
@@ -463,7 +464,7 @@
       "uniqueId": "usaco-1141",
       "name": "Routing",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1141",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DP", "Determinant"],
@@ -476,7 +477,7 @@
       "uniqueId": "usaco-1142",
       "name": "Balanced Subsets",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1142",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DP", "Prefix Sums"],
@@ -554,7 +555,7 @@
       "uniqueId": "usaco-1164",
       "name": "Tickets",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1164",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["SP", "SegTree"],
@@ -567,7 +568,7 @@
       "uniqueId": "usaco-1165",
       "name": "Paired Up",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1165",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["DP"],
@@ -580,7 +581,7 @@
       "uniqueId": "usaco-1166",
       "name": "HILO",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1166",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DP", "Combinatorics"],
@@ -656,7 +657,7 @@
       "uniqueId": "usaco-1189",
       "name": "Counting Haybales",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1189",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["DP"],
@@ -669,7 +670,7 @@
       "uniqueId": "usaco-1190",
       "name": "Multiple Choice Test",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1190",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["Convex"],
@@ -721,7 +722,7 @@
       "uniqueId": "usaco-1212",
       "name": "Paint by Rectangles",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1212",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["Euler's Formula", "DSU", "SegTree"],
@@ -734,7 +735,7 @@
       "uniqueId": "usaco-1214",
       "name": "Phone Numbers",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1214",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["DP"],
@@ -789,7 +790,7 @@
       "source": "Gold",
       "difficulty": "Normal",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Tree"],
       "solutionMetadata": {
         "kind": "internal",
         "hasHints": true
@@ -853,7 +854,7 @@
       "source": "Gold",
       "difficulty": "Normal",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Amortized Analysis", "Sorted Set"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1258"
@@ -863,10 +864,10 @@
       "uniqueId": "usaco-1260",
       "name": "Breakdown",
       "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1260",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Shortest Path"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1260"
@@ -876,10 +877,10 @@
       "uniqueId": "usaco-1261",
       "name": "Making Friends",
       "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1261",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Small to Large"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1261"
@@ -889,7 +890,7 @@
       "uniqueId": "usaco-1262",
       "name": "Palindromes",
       "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1262",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": [],
@@ -1021,7 +1022,7 @@
     {
       "uniqueId": "ks-CandiesTestSet1",
       "name": "Candies (Test Set 1)",
-      "url": "https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ff43/0000000000337b4d",
+      "url": "https://zibada.guru/gcj/ks2020c/problems/#D",
       "source": "Google Kickstart",
       "difficulty": "Hard",
       "isStarred": true,
@@ -1181,7 +1182,7 @@
       "source": "Gold",
       "difficulty": "Easy",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Sorting"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1305"
@@ -1337,7 +1338,7 @@
       "source": "Silver",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Functional Graph"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1278"
@@ -1350,7 +1351,7 @@
       "source": "Silver",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Tree"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1279"
@@ -1363,7 +1364,7 @@
       "source": "Silver",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Greedy"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1280"
@@ -1376,7 +1377,7 @@
       "source": "Silver",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Sorting", "Binary Search"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1303"
@@ -1389,7 +1390,7 @@
       "source": "Silver",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Graphs", "DP"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1304"
@@ -1402,7 +1403,7 @@
       "source": "Silver",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Sorting", "Prefix Sums"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1326"
@@ -1493,7 +1494,7 @@
       "source": "Gold",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Tree", "Sorting"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1306"
@@ -1506,7 +1507,7 @@
       "source": "Gold",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["BFS"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1329"
@@ -1519,7 +1520,7 @@
       "source": "Gold",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["DP"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1330"
@@ -1532,7 +1533,7 @@
       "source": "Gold",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["DP", "Connected Components", "Tree"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1331"
@@ -1675,23 +1676,10 @@
       "source": "Platinum",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Binary Lifting"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1284"
-      }
-    },
-    {
-      "uniqueId": "usaco-1285",
-      "name": "Mana Collection",
-      "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1285",
-      "source": "Platinum",
-      "difficulty": "N/A",
-      "isStarred": false,
-      "tags": [],
-      "solutionMetadata": {
-        "kind": "USACO",
-        "usacoId": "1285"
       }
     },
     {
@@ -1701,7 +1689,7 @@
       "source": "Platinum",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Tree", "DP"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1286"
@@ -1714,7 +1702,7 @@
       "source": "Platinum",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["SegTree"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1308"
@@ -1727,7 +1715,7 @@
       "source": "Platinum",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Tree", "DP"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1310"
@@ -1753,10 +1741,946 @@
       "source": "Platinum",
       "difficulty": "N/A",
       "isStarred": false,
-      "tags": [],
+      "tags": ["DSU"],
       "solutionMetadata": {
         "kind": "USACO",
         "usacoId": "1334"
+      }
+    },
+    {
+      "uniqueId": "usaco-1347",
+      "name": "Candy Cane Feast",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1347",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Simulation"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1347"
+      }
+    },
+    {
+      "uniqueId": "usaco-1348",
+      "name": "Cowntact Tracing 2",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1348",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1348"
+      }
+    },
+    {
+      "uniqueId": "usaco-1349",
+      "name": "Farmer John Actually Farms",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1349",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1349"
+      }
+    },
+    {
+      "uniqueId": "usaco-1350",
+      "name": "Bovine Acrobatics",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1350",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Greedy", "Deque"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1350"
+      }
+    },
+    {
+      "uniqueId": "usaco-1351",
+      "name": "Cycle Correspondence",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1351",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Graphs"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1351"
+      }
+    },
+    {
+      "uniqueId": "usaco-1352",
+      "name": "Target Practice",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1352",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Prefix Sums"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1352"
+      }
+    },
+    {
+      "uniqueId": "usaco-1353",
+      "name": "Flight Routes",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1353",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["DP"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1353"
+      }
+    },
+    {
+      "uniqueId": "usaco-1354",
+      "name": "Minimum Longest Trip",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1354",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Toposort", "Sorting"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1354"
+      }
+    },
+    {
+      "uniqueId": "usaco-1355",
+      "name": "Haybale Distribution",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1355",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Convex", "Ternary Search"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1355"
+      }
+    },
+    {
+      "uniqueId": "usaco-1356",
+      "name": "Cowntact Tracing",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1356",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Tree", "Greedy"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1356"
+      }
+    },
+    {
+      "uniqueId": "usaco-1357",
+      "name": "A Graph Problem",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1357",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Graphs", "Spanning Tree", "DSU"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1357"
+      }
+    },
+    {
+      "uniqueId": "usaco-1358",
+      "name": "Train Scheduling",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1358",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["DP"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1358"
+      }
+    },
+    {
+      "uniqueId": "usaco-1371",
+      "name": "Majority Opinion",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1371",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1371"
+      }
+    },
+    {
+      "uniqueId": "usaco-1372",
+      "name": "Cannonball",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1372",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Simulation"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1372"
+      }
+    },
+    {
+      "uniqueId": "usaco-1373",
+      "name": "Balancing Bacteria",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1373",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1373"
+      }
+    },
+    {
+      "uniqueId": "usaco-1374",
+      "name": "Cowmpetency",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1374",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1374"
+      }
+    },
+    {
+      "uniqueId": "usaco-1375",
+      "name": "Potion Farming",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1375",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Tree"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1375"
+      }
+    },
+    {
+      "uniqueId": "usaco-1376",
+      "name": "Cowlendar",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1376",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Pigeonhole"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1376"
+      }
+    },
+    {
+      "uniqueId": "usaco-1377",
+      "name": "Walking in Manhattan",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1377",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Binary Search"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1377"
+      }
+    },
+    {
+      "uniqueId": "usaco-1378",
+      "name": "Cowmpetency",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1378",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["DP", "Exponentiation"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1378"
+      }
+    },
+    {
+      "uniqueId": "usaco-1379",
+      "name": "Nap Sort",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1379",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Binary Search"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1379"
+      }
+    },
+    {
+      "uniqueId": "usaco-1380",
+      "name": "Island Vacation",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1380",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Cactus", "DP"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1380"
+      }
+    },
+    {
+      "uniqueId": "usaco-1381",
+      "name": "Merging Cells",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1381",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Range DP"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1381"
+      }
+    },
+    {
+      "uniqueId": "usaco-1382",
+      "name": "Mooball Teams III",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1382",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["SegTree"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1382"
+      }
+    },
+    {
+      "uniqueId": "usaco-1395",
+      "name": "Palindrome Game",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1395",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Game"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1395"
+      }
+    },
+    {
+      "uniqueId": "usaco-1396",
+      "name": "Milk Exchange",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1396",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Simulation"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1396"
+      }
+    },
+    {
+      "uniqueId": "usaco-1397",
+      "name": "Maximizing Productivity",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1397",
+      "source": "Bronze",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1397"
+      }
+    },
+    {
+      "uniqueId": "usaco-1398",
+      "name": "Target Practice II",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1398",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Binary Search", "Sorting"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1398"
+      }
+    },
+    {
+      "uniqueId": "usaco-1399",
+      "name": "Test Tubes",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1399",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1399"
+      }
+    },
+    {
+      "uniqueId": "usaco-1400",
+      "name": "Moorbles",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1400",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Prefix Sums"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1400"
+      }
+    },
+    {
+      "uniqueId": "usaco-1401",
+      "name": "Bessla Motors",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1401",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Shortest Path"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1401"
+      }
+    },
+    {
+      "uniqueId": "usaco-1402",
+      "name": "Milk Exchange",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1402",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Stack", "Prefix Sums"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1402"
+      }
+    },
+    {
+      "uniqueId": "usaco-1403",
+      "name": "Quantum Moochanics",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1403",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Priority Queue", "Linked List"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1403"
+      }
+    },
+    {
+      "uniqueId": "usaco-1404",
+      "name": "Lazy Cow",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1404",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Stack"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1404"
+      }
+    },
+    {
+      "uniqueId": "usaco-1405",
+      "name": "Minimum Sum of Maximums",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1405",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Range DP"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1405"
+      }
+    },
+    {
+      "uniqueId": "usaco-1406",
+      "name": "Infinite Adventure",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1406",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Binary Lifting"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1406"
+      }
+    },
+    {
+      "uniqueId": "usaco-1419",
+      "name": "Logical Moos",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1419",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1419"
+      }
+    },
+    {
+      "uniqueId": "usaco-1420",
+      "name": "Walking Along a Fence",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1420",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1420"
+      }
+    },
+    {
+      "uniqueId": "usaco-1421",
+      "name": "Farmer John's Favorite Permutation",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1421",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1421"
+      }
+    },
+    {
+      "uniqueId": "usaco-1422",
+      "name": "Bessie's Interview",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1422",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Priority Queue"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1422"
+      }
+    },
+    {
+      "uniqueId": "usaco-1423",
+      "name": "Painting Fence Posts",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1423",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Prefix Sums"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1423"
+      }
+    },
+    {
+      "uniqueId": "usaco-1424",
+      "name": "The 'Winning' Gene",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1424",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Two Pointers"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1424"
+      }
+    },
+    {
+      "uniqueId": "usaco-1425",
+      "name": "Cowreography",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1425",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Deque"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1425"
+      }
+    },
+    {
+      "uniqueId": "usaco-1426",
+      "name": "Grass Segments",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1426",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["1DRQ"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1426"
+      }
+    },
+    {
+      "uniqueId": "usaco-1427",
+      "name": "Smaller Averages",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1427",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["DP"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1427"
+      }
+    },
+    {
+      "uniqueId": "usaco-1428",
+      "name": "Identity Theft",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1428",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["DP", "Convex"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1428"
+      }
+    },
+    {
+      "uniqueId": "usaco-1429",
+      "name": "Splitting Haybales",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1429",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["Binary Lifting", "BBST", "DSU"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1429"
+      }
+    },
+    {
+      "uniqueId": "usaco-1430",
+      "name": "Activating Robots",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1430",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": ["DP", "Bitmask"],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1430"
+      }
+    },
+    {
+      "uniqueId": "usaco-1443",
+      "name": "Roundabout Rounding",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1443",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1443"
+      }
+    },
+    {
+      "uniqueId": "usaco-1444",
+      "name": "Farmer John's Cheese Block",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1444",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1444"
+      }
+    },
+    {
+      "uniqueId": "usaco-1445",
+      "name": "It's Mooin' Time",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1445",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1445"
+      }
+    },
+    {
+      "uniqueId": "usaco-1446",
+      "name": "Cake Game",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1446",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1446"
+      }
+    },
+    {
+      "uniqueId": "usaco-1447",
+      "name": "Deforestation",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1447",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1447"
+      }
+    },
+    {
+      "uniqueId": "usaco-1448",
+      "name": "2D Conveyor Belt",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1448",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1448"
+      }
+    },
+    {
+      "uniqueId": "usaco-1449",
+      "name": "Cowdependence",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1449",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1449"
+      }
+    },
+    {
+      "uniqueId": "usaco-1450",
+      "name": "Interstellar Intervals",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1450",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1450"
+      }
+    },
+    {
+      "uniqueId": "usaco-1451",
+      "name": "Job Completion",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1451",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1451"
+      }
+    },
+    {
+      "uniqueId": "usaco-1452",
+      "name": "All Pairs Similarity",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1452",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1452"
+      }
+    },
+    {
+      "uniqueId": "usaco-1453",
+      "name": "It's Mooin' Time",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1453",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1453"
+      }
+    },
+    {
+      "uniqueId": "usaco-1454",
+      "name": "Maximize Minimum Difference",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1454",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1454"
+      }
+    },
+    {
+      "uniqueId": "usaco-1467",
+      "name": "Astral Superposition",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1467",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1467"
+      }
+    },
+    {
+      "uniqueId": "usaco-1468",
+      "name": "It's Mooin' Time II",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1468",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1468"
+      }
+    },
+    {
+      "uniqueId": "usaco-1469",
+      "name": "Cow Checkups",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1469",
+      "source": "Bronze",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1469"
+      }
+    },
+    {
+      "uniqueId": "usaco-1470",
+      "name": "Cow Checkups",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1470",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1470"
+      }
+    },
+    {
+      "uniqueId": "usaco-1471",
+      "name": "Farmer John's Favorite Operation",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1471",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1471"
+      }
+    },
+    {
+      "uniqueId": "usaco-1472",
+      "name": "Table Recovery",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1472",
+      "source": "Silver",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1472"
+      }
+    },
+    {
+      "uniqueId": "usaco-1473",
+      "name": "Median Heap",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1473",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1473"
+      }
+    },
+    {
+      "uniqueId": "usaco-1474",
+      "name": "Reachable Pairs",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1474",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1474"
+      }
+    },
+    {
+      "uniqueId": "usaco-1475",
+      "name": "Photo Op",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1475",
+      "source": "Gold",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1475"
+      }
+    },
+    {
+      "uniqueId": "usaco-1476",
+      "name": "DFS Order",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1476",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1476"
+      }
+    },
+    {
+      "uniqueId": "usaco-1477",
+      "name": "Shock Wave",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1477",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1477"
+      }
+    },
+    {
+      "uniqueId": "usaco-1478",
+      "name": "Watering the Plants",
+      "url": "https://usaco.org/index.php?page=viewproblem2&cpid=1478",
+      "source": "Platinum",
+      "difficulty": "N/A",
+      "isStarred": false,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "USACO",
+        "usacoId": "1478"
       }
     }
   ]

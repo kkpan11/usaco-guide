@@ -17,19 +17,6 @@
   ],
   "Easier Problems": [
     {
-      "uniqueId": "cf-919B",
-      "name": "Perfect Number",
-      "url": "https://codeforces.com/contest/919/problem/B",
-      "source": "CF",
-      "difficulty": "Easy",
-      "isStarred": false,
-      "tags": ["Binary Search", "DP"],
-      "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
-      }
-    },
-    {
       "uniqueId": "cf-100886G",
       "name": "Maximum Product",
       "url": "https://codeforces.com/gym/100886/problem/G",
@@ -38,8 +25,8 @@
       "isStarred": false,
       "tags": ["DP"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
+        "kind": "internal",
+        "hasHints": true
       }
     },
     {
@@ -51,7 +38,7 @@
       "isStarred": true,
       "tags": ["DP"],
       "solutionMetadata": {
-        "kind": "none"
+        "kind": "internal"
       }
     },
     {
@@ -63,20 +50,7 @@
       "isStarred": false,
       "tags": ["DP"],
       "solutionMetadata": {
-        "kind": "autogen-label-from-site",
-        "site": "CF"
-      }
-    },
-    {
-      "uniqueId": "cc-DEVLOCKS",
-      "name": "Devu and Locks",
-      "url": "https://www.codechef.com/problems/DEVLOCK",
-      "source": "CC",
-      "difficulty": "Normal",
-      "isStarred": false,
-      "tags": ["DP"],
-      "solutionMetadata": {
-        "kind": "none"
+        "kind": "internal"
       }
     }
   ],

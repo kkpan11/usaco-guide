@@ -20,7 +20,7 @@ export const Anchor = styled.a`
 `;
 
 // https://stackoverflow.com/questions/45871439/before-and-after-pseudo-classes-used-with-styled-components
-const StyledResourceRow = styled.tr`
+const StyledResourceRow = styled.tr<{ isActive: boolean }>`
   ${({ isActive }) =>
     isActive
       ? css`
@@ -40,7 +40,7 @@ export default function ResourcesListItem({
   const userLang = useUserLangSetting();
   const darkMode = useDarkMode();
   const [isActive, setIsActive] = React.useState(false);
-  const id = `resource-${encodeURIComponent(resource.url)}`;
+  const id = `resource-${encodeURIComponent(resource.url!)}`;
 
   React.useEffect(() => {
     const hashHandler = (): void => {

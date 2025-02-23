@@ -21,8 +21,7 @@ commonly referred to as a **successor graph**.
 	</Resource>
 </Resources>
 
-You can think of every connected component of a functional graph as a rooted
-tree plus an additional edge going out of the root.
+You can think of every connected component of a functional graph as a rooted tree with all edges directed toward the root plus an additional edge going out of the root.
 
 ## Floyd's Algorithm
 
@@ -125,8 +124,7 @@ import java.io.*;
 import java.util.*;
 
 public class CoopGame {
-	static BufferedReader read =
-	    new BufferedReader(new InputStreamReader(System.in));
+	static BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
 
 	public static void main(String[] args) throws IOException {
 		moveResult(new int[] {0, 1});
@@ -391,15 +389,12 @@ public class Badge {
 	}
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader reader =
-		    new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		int n = Integer.parseInt(reader.readLine());
 		p = new int[n];
 		StringTokenizer st = new StringTokenizer(reader.readLine());
-		for (int i = 0; i < n; i++) {
-			p[i] = Integer.parseInt(st.nextToken()) - 1;
-		}
+		for (int i = 0; i < n; i++) { p[i] = Integer.parseInt(st.nextToken()) - 1; }
 		reader.close();
 
 		ans = new int[n];
@@ -409,9 +404,7 @@ public class Badge {
 			dfs(i);
 		}
 
-		for (int i = 0; i < n - 1; i++) {
-			System.out.print((ans[i] + 1) + " ");
-		}
+		for (int i = 0; i < n - 1; i++) { System.out.print((ans[i] + 1) + " "); }
 		System.out.println(ans[n - 1] + 1);
 	}
 }
@@ -581,8 +574,7 @@ public class Badge {
 	static List<List<Integer>> radj;
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader in =
-		    new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 		int n = Integer.parseInt(in.readLine());
 		adj = new int[n];
@@ -603,9 +595,7 @@ public class Badge {
 			if (ans[i] == -1) { floyd(i); }
 		}
 
-		for (int i = 0; i < n; i++) {
-			cout << (ans[i] + 1) << " \n"[i == n - 1];
-		}
+		for (int i = 0; i < n; i++) { System.out.print(ans[i] + 1 + " "); }
 	}
 
 	private static void floyd(int x) {
@@ -714,6 +704,236 @@ for i in range(n):
 		floyd(i)
 
 print(" ".join(str(i + 1) for i in ans))
+```
+
+</PySection>
+</LanguageSection>
+
+It's also possible to use `floyd(x)` to generate answers for all vertices in the connected component
+containing `x` without using adjacency lists.
+
+<LanguageSection>
+<CPPSection>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> res;
+vector<int> arr;
+
+/*
+ * fills up all vertices from curr to first_cycle,
+ * whose answer has already been calculated
+ */
+void fill_up(int curr, int first_cycle) {
+	while (curr != first_cycle) {
+		res[curr] = res[first_cycle];
+		curr = arr[curr];
+	}
+}
+
+int floyd(int curr) {
+	int a = arr[curr];
+	int b = arr[arr[curr]];
+	// find cycle using Floyd's algo
+	while (a != b) {
+		/*
+		 * while finding cycle, if a node is found out to be already
+		 * calculated, go to the fill_up function, where, the answer from
+		 * vertex curr to this vertex a is ans[a]
+		 */
+		if (res[a] != -1) {
+			fill_up(curr, a);
+			return 0;
+		}
+		a = arr[a];
+		b = arr[arr[b]];
+	}
+
+	a = curr;
+	while (a != b) {
+		a = arr[a];
+		b = arr[b];
+	}
+
+	int cycle_first = a;
+	a = curr;
+	while (a != cycle_first) {
+		res[a] = cycle_first;
+		a = arr[a];
+	}
+
+	a = cycle_first;
+	// for each node in the cycle, the answer would be itself
+	do {
+		res[a] = a;
+		a = arr[a];
+	} while (a != cycle_first);
+
+	return 0;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	arr.resize(n + 1);
+	for (int i = 1; i <= n; i++) { cin >> arr[i]; }
+
+	res.resize(n + 1, -1);
+	for (int i = 1; i <= n; i++) {
+		if (res[i] == -1) { floyd(i); }
+	}
+
+	for (int i = 1; i <= n; i++) { cout << res[i] << " \n"[i == n]; }
+}
+```
+
+</CPPSection>
+<JavaSection>
+
+```java
+import java.io.*;
+import java.util.*;
+
+public class Badge {
+	static int[] ans;
+	static int[] arr;
+	public static void main(String[] args) throws IOException {
+		BufferedReader x = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(x.readLine());
+		int n = Integer.parseInt(st.nextToken());
+		arr = new int[n + 1];
+		st = new StringTokenizer(x.readLine());
+		for (int i = 1; i <= n; i++) { arr[i] = Integer.parseInt(st.nextToken()); }
+
+		ans = new int[n + 1];
+		Arrays.fill(ans, -1);
+		for (int i = 1; i <= n; i++) {
+			if (ans[i] == -1) { floyd(i); }
+		}
+
+		StringBuilder output = new StringBuilder();
+		for (int i = 1; i <= n; i++) { output.append(ans[i]).append(" "); }
+		output.setLength(output.length() - 1);
+		System.out.println(output);
+	}
+
+	/**
+	 * fills up all vertices from curr to firstCycle,
+	 * whose answer has already been calculated
+	 */
+	static void fillUp(int curr, int firstCycle) {
+		while (curr != firstCycle) {
+			ans[curr] = ans[firstCycle];
+			curr = arr[curr];
+		}
+	}
+
+	static int floyd(int curr) {
+		int a = arr[curr];
+		int b = arr[arr[curr]];
+		// find cycle using Floyd's algo
+		while (a != b) {
+			/*
+			 * while finding cycle, if a node is found out to be already
+			 * calculated, go to the fillUp function, where, the answer from
+			 * vertex curr to this vertex a is ans[a]
+			 */
+			if (ans[a] != -1) {
+				fillUp(curr, a);
+				return 0;
+			}
+			a = arr[a];
+			b = arr[arr[b]];
+		}
+		a = curr;
+		while (a != b) {
+			a = arr[a];
+			b = arr[b];
+		}
+		int cycleFirst = a;
+		a = curr;
+
+		while (a != cycleFirst) {
+			ans[a] = cycleFirst;
+			a = arr[a];
+		}
+		a = cycleFirst;
+		// for each node in the cycle, the answer would be itself
+		do {
+			ans[a] = a;
+			a = arr[a];
+		} while (a != cycleFirst);
+
+		return 0;
+	}
+}
+```
+
+</JavaSection>
+<PySection>
+
+```py
+def fill_up(curr: int, first_cycle: int):
+	"""
+	Fills up all vertices from curr to first_cycle,
+	whose answer has already been calculated.
+	"""
+	while curr != first_cycle:
+		res[curr] = res[first_cycle]
+		curr = arr[curr]
+
+
+def floyd(curr: int):
+	a = arr[curr]
+	b = arr[arr[curr]]
+
+	# Find cycle using Floyd's cycle-finding algorithm
+	while a != b:
+		if res[a] != -1:
+			"""
+			While finding cycle, if a node is found to be already
+			calculated, go to the fill_up function where the answer
+			from vertex curr to this vertex a is res[a].
+			"""
+			fill_up(curr, a)
+			return
+
+		a = arr[a]
+		b = arr[arr[b]]
+
+	a = curr
+	while a != b:
+		a = arr[a]
+		b = arr[b]
+
+	cycle_first = a
+	a = curr
+	while a != cycle_first:
+		res[a] = cycle_first
+		a = arr[a]
+
+	# For each node in the cycle, the answer would be itself
+	a = cycle_first
+	while True:
+		res[a] = a
+		a = arr[a]
+		if a == cycle_first:
+			break
+
+
+n = int(input())
+
+arr = list(map(int, input().split()))
+arr = [0] + arr
+res = [-1] * (n + 1)
+
+for i in range(1, n + 1):
+	if res[i] == -1:
+		floyd(i)
+
+print(*res[1:])
 ```
 
 </PySection>

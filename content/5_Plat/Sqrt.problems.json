@@ -1,5 +1,19 @@
 {
   "MODULE_ID": "sqrt",
+  "ndcp": [
+    {
+      "uniqueId": "ndcp",
+      "name": "Hop Sugoroku",
+      "url": "https://atcoder.jp/contests/abc335/tasks/abc335_f",
+      "source": "Atcoder",
+      "difficulty": "Medium",
+      "isStarred": false,
+      "tags": ["Sqrt"],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ],
   "sam": [
     {
       "uniqueId": "cses-1648",
@@ -43,18 +57,6 @@
       }
     },
     {
-      "uniqueId": "joi-18-BitarosBirthday",
-      "name": "2018 - Bitaro's Birthday",
-      "url": "https://oj.uz/problem/view/JOI18_bitaro",
-      "source": "JOI",
-      "difficulty": "Easy",
-      "isStarred": false,
-      "tags": ["Sqrt"],
-      "solutionMetadata": {
-        "kind": "none"
-      }
-    },
-    {
       "uniqueId": "poi-17-containers",
       "name": "2017 - Containers",
       "url": "https://szkopul.edu.pl/problemset/problem/oNnWY6ZuzzhvG-jCmijiXkIk/site/?key=statement",
@@ -90,6 +92,18 @@
       "solutionMetadata": {
         "kind": "autogen-label-from-site",
         "site": "CF"
+      }
+    },
+    {
+      "uniqueId": "joi-18-BitarosBirthday",
+      "name": "2018 - Bitaro's Birthday",
+      "url": "https://oj.uz/problem/view/JOI18_bitaro",
+      "source": "JOI",
+      "difficulty": "Normal",
+      "isStarred": true,
+      "tags": ["Sqrt", "DP"],
+      "solutionMetadata": {
+        "kind": "internal"
       }
     },
     {
@@ -145,7 +159,7 @@
       "uniqueId": "usaco-841",
       "name": "Train Tracking",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=841",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["Sqrt"],
@@ -202,15 +216,15 @@
       "isStarred": false,
       "tags": ["Sqrt"],
       "solutionMetadata": {
-        "kind": "IOI",
-        "year": 2009
+        "kind": "internal",
+        "hasHints": true
       }
     },
     {
       "uniqueId": "usaco-1188",
       "name": "Minimizing Haybales",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1188",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Sqrt"],
@@ -222,13 +236,13 @@
       "uniqueId": "usaco-817",
       "name": "New Barns",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=817",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["Sqrt"],
       "solutionMetadata": {
-        "kind": "USACO",
-        "usacoId": "817"
+        "kind": "internal",
+        "hasHints": true
       }
     },
     {
@@ -325,7 +339,7 @@
       "uniqueId": "usaco-793",
       "name": "Cow At Large",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=793",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["Sqrt"],

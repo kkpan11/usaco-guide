@@ -2,14 +2,15 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import * as freshOrdering from './content/ordering';
+import { typeDefs } from './graphql-types';
 import div_to_probs from './src/components/markdown/ProblemsList/DivisionList/div_to_probs.json';
 import { createXdmNode } from './src/gatsby/create-xdm-node';
 import {
-  ProblemMetadata,
-  ShortProblemInfo,
   checkInvalidUsacoMetadata,
   getProblemInfo,
   getProblemURL,
+  ProblemMetadata,
+  ShortProblemInfo,
 } from './src/models/problem';
 // Questionable hack to get full commit history so that timestamps work
 try {
@@ -97,7 +98,7 @@ exports.onCreateNode = async api => {
       try {
         parsedContent[tableId].forEach((metadata: ProblemMetadata) => {
           checkInvalidUsacoMetadata(metadata);
-          stream.write(metadata.uniqueId + '\n');
+          if (process.env.CI) stream.write(metadata.uniqueId + '\n');
           transformObject(
             {
               ...getProblemInfo(metadata, freshOrdering),
@@ -178,28 +179,25 @@ exports.onCreateNode = async api => {
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions;
-  fs.readFile('./src/redirects.txt', (err, data) => {
-    if (err) throw new Error('error: ' + err);
-    (data + '')
-      .split('\n')
-      .filter(line => line != '')
-      .filter(line => line.charAt(0) !== '#')
-      .map(line => {
-        const tokens = line.split('\t');
-        return {
-          from: tokens[0],
-          to: tokens[1],
-        };
-      })
-      .forEach(({ from, to }) => {
-        createRedirect({
-          fromPath: from,
-          toPath: to,
-          redirectInBrowser: true,
-          isPermanent: true,
-        });
+  const redirectsData = fs.readFileSync('./src/redirects.txt');
+  (redirectsData + '')
+    .split('\n')
+    .filter(line => line != '')
+    .filter(line => line.charAt(0) !== '#')
+    .map(line => {
+      const tokens = line.split('\t');
+      return {
+        from: tokens[0],
+        to: tokens[1],
+      };
+    })
+    .forEach(({ from, to }) => {
+      createRedirect({
+        fromPath: from,
+        toPath: to,
+        isPermanent: true,
       });
-  });
+    });
   const result = await graphql(`
     query {
       modules: allXdm(filter: { fileAbsolutePath: { regex: "/content/" } }) {
@@ -332,6 +330,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: userSolutionTemplate,
       context: {
         problem: problem,
+        id: problem.uniqueId,
       },
     });
   });
@@ -351,6 +350,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               uniqueId: uniqueId,
               name: name,
             },
+            id: uniqueId,
           },
         });
       }
@@ -447,7 +447,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           createRedirect({
             fromPath,
             toPath: path,
-            redirectInBrowser: true,
             isPermanent: true,
           });
         });
@@ -466,15 +465,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       throw e;
     }
   });
+  let hasProblemMissingInternalSolution = false;
   problems
     .filter(x => x.node.solution?.kind === 'internal')
     .forEach(({ node: problemNode }) => {
       if (!problemsWithInternalSolutions.has(problemNode.uniqueId)) {
-        console.error(
+        hasProblemMissingInternalSolution = true;
+        reporter.error(
           `Problem ${problemNode.uniqueId} claims to have an internal solution but doesn't`
         );
       }
     });
+  if (hasProblemMissingInternalSolution) {
+    // Without this, gatsby build will hang indefinitely for unclear reasons.
+    // My best guess is the multiprocessing Gatsby does fails to exit cleanly.
+    // However, somehow sending SIGINT to this process exits fine.
+    process.kill(process.pid, 'SIGINT');
+  }
   // Generate Syllabus Pages //
   const syllabusTemplate = path.resolve(`./src/templates/syllabusTemplate.tsx`);
   freshOrdering.SECTIONS.forEach(division => {
@@ -491,87 +498,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
-  const typeDefs = `
-    type Xdm implements Node {
-      body: String
-      fileAbsolutePath: String
-      frontmatter: XdmFrontmatter
-      isIncomplete: Boolean
-      cppOc: Int
-      javaOc: Int
-      pyOc: Int
-      toc: TableOfContents
-      mdast: String
-    }
-
-    type XdmFrontmatter implements Node {
-      id: String
-      title: String
-      author: String
-      contributors: String
-      description: String
-      prerequisites: [String]
-      redirects: [String]
-      frequency: Int
-    }
-
-    type Heading {
-      depth: Int
-      value: String
-      slug: String
-    }
-
-    type TableOfContents {
-      cpp: [Heading]
-      java: [Heading]
-      py: [Heading]
-    }
-
-    type ModuleProblemLists implements Node {
-      moduleId: String
-      problemLists: [ModuleProblemList]
-    }
-
-    type ModuleProblemList {
-      listId: String!
-      problems: [ModuleProblemInfo]
-    }
-
-    type ProblemInfo implements Node {
-      uniqueId: String!
-      name: String!
-      url: String!
-      source: String!
-      sourceDescription: String
-      isStarred: Boolean!
-      difficulty: String
-      tags: [String]
-      solution: ProblemSolutionInfo
-      inModule: Boolean!
-      module: Xdm @link(by: "frontmatter.id")
-    }
-
-    type ModuleProblemInfo {
-      uniqueId: String!
-      name: String!
-      url: String!
-      source: String!
-      sourceDescription: String
-      isStarred: Boolean!
-      difficulty: String
-      tags: [String]
-      solution: ProblemSolutionInfo
-    }
-
-    type ProblemSolutionInfo {
-      kind: String!
-      label: String
-      labelTooltip: String
-      url: String
-      sketch: String
-      hasHints:Boolean
-    }
-  `;
   createTypes(typeDefs);
 };
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');

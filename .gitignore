@@ -57,6 +57,7 @@ typings/
 # gatsby files
 .cache/
 public
+src/gatsby-types.d.ts
 
 # Mac files
 .DS_Store
@@ -91,3 +92,6 @@ build.css
 
 # for problem auto-updates
 usaco-problems/
+
+# storybook
+storybook-static/

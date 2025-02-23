@@ -9,7 +9,7 @@ import {
   moduleIDToSectionMap,
   moduleIDToURLMap,
 } from '../../../../content/ordering';
-import MarkdownLayoutContext from '../../../context/MarkdownLayoutContext';
+import { useMarkdownLayout } from '../../../context/MarkdownLayoutContext';
 import { useMarkdownProblems } from '../../../context/MarkdownProblemListsContext';
 import { ProblemSolutionContext } from '../../../context/ProblemSolutionContext';
 import {
@@ -18,11 +18,11 @@ import {
   useUserLangSetting,
 } from '../../../context/UserDataContext/properties/simpleProperties';
 import { ModuleInfo, ModuleLinkInfo } from '../../../models/module';
-import { getProblemsProgressInfo } from '../../../utils/getProgressInfo';
+import { useProblemsProgressInfo } from '../../../utils/getProgressInfo';
 import { DashboardProgressSmall } from '../../Dashboard/DashboardProgress';
 import { Frequency } from '../../Frequency';
 import MarkCompleteButton from '../MarkCompleteButton';
-import getSuffix from '../TableOfContents/getSuffix';
+import useSuffix from '../TableOfContents/useSuffix';
 
 export default function ModuleHeaders({
   moduleLinks,
@@ -33,17 +33,21 @@ export default function ModuleHeaders({
     markdownLayoutInfo: markdownData,
     moduleProgress,
     handleCompletionChange,
-  } = useContext(MarkdownLayoutContext);
+  } = useMarkdownLayout();
 
   const lang = useUserLangSetting();
   const setLang = useSetUserLangSetting();
-
+  let problemIDs = [] as string[];
   // this is for modules
-  const problemIDs =
-    markdownData instanceof ModuleInfo
-      ? useMarkdownProblems().map(problem => problem.uniqueId)
-      : [];
-  const problemsProgressInfo = getProblemsProgressInfo(problemIDs);
+  try {
+    const markdownProblems = useMarkdownProblems();
+    if (markdownData instanceof ModuleInfo) {
+      problemIDs = markdownProblems.map(problem => problem.uniqueId);
+    }
+  } catch (e) {
+    console.log(e);
+  }
+  const problemsProgressInfo = useProblemsProgressInfo(problemIDs);
 
   // this is for solutions
   const problemSolutionContext = useContext(ProblemSolutionContext);
@@ -79,7 +83,7 @@ export default function ModuleHeaders({
         label: `${SECTION_LABELS[moduleIDToSectionMap[module.id]]} - ${
           module.title
         }`,
-        url: `${moduleIDToURLMap[module.id]}#problem-${problem.uniqueId}`,
+        url: `${moduleIDToURLMap[module.id]}#problem-${problem!.uniqueId}`,
       };
     });
   }
@@ -204,7 +208,7 @@ export default function ModuleHeaders({
           </Menu>
 
           <Link
-            to={`/editor?filepath=${getSuffix()}`}
+            to={`/editor?filepath=${useSuffix()}`}
             className="text-sm font-medium text-gray-600 hover:text-gray-900 my-0 dark:text-gray-400 dark:hover:text-gray-100 group inline-flex items-center space-x-1.5"
           >
             <span>Edit This Page</span>

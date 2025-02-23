@@ -14,6 +14,20 @@
       }
     }
   ],
+  "gcdex": [
+    {
+      "uniqueId": "gcdex",
+      "name": "GCDEX - GCD Extreme",
+      "url": "https://www.spoj.com/problems/GCDEX/",
+      "source": "SPOJ",
+      "difficulty": "Hard",
+      "isStarred": true,
+      "tags": [],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ],
   "general": [
     {
       "uniqueId": "ac-DivGame",
@@ -70,7 +84,7 @@
       "source": "CSES",
       "difficulty": "Normal",
       "isStarred": true,
-      "tags": [],
+      "tags": ["Divisibility"],
       "solutionMetadata": {
         "kind": "internal"
       }
@@ -106,7 +120,7 @@
       "source": "CSES",
       "difficulty": "Hard",
       "isStarred": false,
-      "tags": [],
+      "tags": ["Divisibility"],
       "solutionMetadata": {
         "kind": "internal"
       }

@@ -167,13 +167,13 @@
       "uniqueId": "usaco-925",
       "name": "Mooriokart",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=925",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Very Hard",
       "isStarred": false,
       "tags": ["Knapsack"],
       "solutionMetadata": {
-        "kind": "USACO",
-        "usacoId": "925"
+        "kind": "internal",
+        "hasHints": true
       }
     }
   ],
@@ -255,12 +255,13 @@
       "uniqueId": "usaco-1045",
       "name": "Exercise",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1045",
-      "source": "Plat",
+      "source": "Platinum",
       "difficulty": "Insane",
       "isStarred": false,
       "tags": ["Knapsack", "Prime Factorization"],
       "solutionMetadata": {
-        "kind": "internal"
+        "kind": "internal",
+        "hasHints": true
       }
     }
   ]
